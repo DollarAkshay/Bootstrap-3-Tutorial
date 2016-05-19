@@ -4,3 +4,6 @@
 
 
 Web.config
+*.exe
+*.ini
+*.pdb
