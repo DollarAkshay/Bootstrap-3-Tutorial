@@ -261,21 +261,42 @@
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 
                                                 <h4> Popovers in a modal</h4>
-                                                <a href="#" class="btn btn-danger pop">Dont click this buttons</a>
+                                                <a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it!" data-content="I knw you would.">Dont click this buttons</a>
                                                 <h4> Tooltips in a modal </h4>
-                                                <a href="">This link</a> should have a tooltip, and so should <a href="">this one</a>
+                                                <a href="" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip, and so should <a href="" data-original-title="Woohooo !!" rel="tooltip">this one</a>
                                                 
                                                 <hr />
                                                 <p><small class="text-muted">PS This form dosent do anything just a heads up.</small></p>
 
-                                                <form>
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label" for="inputName">Name</label>
+                                                        <div class="col-lg-10">
+                                                            <input class="form-control" id="inputName" placeholder="Name" type="text"/>
+                                                        </div>
+                                                    </div>
 
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                                                        <div class="col-lg-10">
+                                                            <input class="form-control" id="inputEmail" placeholder="name@example.com" type="email" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label" for="inputMessage">Message</label>
+                                                        <div class="col-lg-10">
+                                                            <textarea class="form-control" id="inputMessage" placeholder="Enter your message here.." rows="3"></textarea>
+                                                            <button class="btn btn-success pull-right" type="submit">Send</button>
+                                                        </div>
+                                                    </div>
                                                 </form>
                                             </div>
 
                                             <div class="modal-footer">
                                                 <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
                                                 <button class="btn btn-primary" type="button">Save Changes</button>
+                                            
                                             </div>
                                         </div>
                                     </div>
